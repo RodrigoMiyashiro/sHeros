@@ -34,6 +34,10 @@
 		6D1AA3F923DC16E900C9C597 /* CharactersSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1AA3F823DC16E900C9C597 /* CharactersSummary.swift */; };
 		6D1AA3FC23DC178E00C9C597 /* CharacterDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1AA3FB23DC178E00C9C597 /* CharacterDetail.swift */; };
 		6D1AA40023DCCD7100C9C597 /* CharacterProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1AA3FF23DCCD7100C9C597 /* CharacterProvider.swift */; };
+		6D1AA40623DCE0B200C9C597 /* ListCharactersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1AA40523DCE0B200C9C597 /* ListCharactersPresenter.swift */; };
+		6D1AA40823DCE0B900C9C597 /* ListCharactersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1AA40723DCE0B900C9C597 /* ListCharactersInteractor.swift */; };
+		6D1AA40A23DCE0BF00C9C597 /* ListCharactersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1AA40923DCE0BF00C9C597 /* ListCharactersRouter.swift */; };
+		6D1AA40C23DCE0CC00C9C597 /* ListCharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1AA40B23DCE0CC00C9C597 /* ListCharactersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +82,10 @@
 		6D1AA3F823DC16E900C9C597 /* CharactersSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersSummary.swift; sourceTree = "<group>"; };
 		6D1AA3FB23DC178E00C9C597 /* CharacterDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetail.swift; sourceTree = "<group>"; };
 		6D1AA3FF23DCCD7100C9C597 /* CharacterProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterProvider.swift; sourceTree = "<group>"; };
+		6D1AA40523DCE0B200C9C597 /* ListCharactersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCharactersPresenter.swift; sourceTree = "<group>"; };
+		6D1AA40723DCE0B900C9C597 /* ListCharactersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCharactersInteractor.swift; sourceTree = "<group>"; };
+		6D1AA40923DCE0BF00C9C597 /* ListCharactersRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCharactersRouter.swift; sourceTree = "<group>"; };
+		6D1AA40B23DCE0CC00C9C597 /* ListCharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCharactersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +133,7 @@
 				6D1AA3C323DBF46800C9C597 /* Utils */,
 				6D1AA3E223DC0E1800C9C597 /* Model */,
 				6D1AA3C123DBF44700C9C597 /* Infrastructure */,
+				6D1AA40123DCE01900C9C597 /* Feature */,
 				6D1AA3A523DA9A5F00C9C597 /* Main.storyboard */,
 				6D1AA3A823DA9A6600C9C597 /* Assets.xcassets */,
 				6D1AA3AA23DA9A6600C9C597 /* LaunchScreen.storyboard */,
@@ -327,6 +336,41 @@
 			path = Detail;
 			sourceTree = "<group>";
 		};
+		6D1AA40123DCE01900C9C597 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				6D1AA40223DCE08700C9C597 /* Character */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		6D1AA40223DCE08700C9C597 /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				6D1AA40423DCE09800C9C597 /* List */,
+				6D1AA40323DCE09500C9C597 /* Detail */,
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
+		6D1AA40323DCE09500C9C597 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		6D1AA40423DCE09800C9C597 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				6D1AA40523DCE0B200C9C597 /* ListCharactersPresenter.swift */,
+				6D1AA40723DCE0B900C9C597 /* ListCharactersInteractor.swift */,
+				6D1AA40923DCE0BF00C9C597 /* ListCharactersRouter.swift */,
+				6D1AA40B23DCE0CC00C9C597 /* ListCharactersView.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -433,13 +477,17 @@
 				6D1AA3E523DC112600C9C597 /* SimplifiedCharacter.swift in Sources */,
 				6D1AA3F523DC166500C9C597 /* Attributes.swift in Sources */,
 				6D1AA3CE23DBF73A00C9C597 /* DefaultHTTPClient.swift in Sources */,
+				6D1AA40C23DCE0CC00C9C597 /* ListCharactersView.swift in Sources */,
 				6D1AA3D023DBF74300C9C597 /* HTTPClient.swift in Sources */,
 				6D1AA3A023DA9A5F00C9C597 /* AppDelegate.swift in Sources */,
 				6D1AA3A223DA9A5F00C9C597 /* SceneDelegate.swift in Sources */,
+				6D1AA40823DCE0B900C9C597 /* ListCharactersInteractor.swift in Sources */,
 				6D1AA3E123DC0DFE00C9C597 /* CharactersProvider.swift in Sources */,
 				6D1AA3EC23DC130800C9C597 /* CharacterSimple.swift in Sources */,
 				6D1AA3D223DBF74B00C9C597 /* HTTPMethod.swift in Sources */,
+				6D1AA40A23DCE0BF00C9C597 /* ListCharactersRouter.swift in Sources */,
 				6D1AA3E823DC11F900C9C597 /* Thumbnail.swift in Sources */,
+				6D1AA40623DCE0B200C9C597 /* ListCharactersPresenter.swift in Sources */,
 				6D1AA3F123DC13C500C9C597 /* ListOfCharacters.swift in Sources */,
 				6D1AA3F723DC16BE00C9C597 /* CharacterSummaryDetail.swift in Sources */,
 				6D1AA3DD23DC083E00C9C597 /* ObtainCharactersRequest.swift in Sources */,
